@@ -43,6 +43,29 @@
                             </div>
                         </form>
                         
+                      <table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Cognome</th>
+				<th>Numero</th>
+			</tr>
+		</thead>
+		<c:forEach items="${persona}" var="lista"> 
+			<tbody>
+				<tr>
+					<td><c:out value="${persona.getNome()}" /></td> 
+ 					<td><c:out value="${persona.getCognome()}" /></td>
+ 					<td><c:out value="${persona.getNumero()}" /></td>
+ 					<td>
+   					 	<input type="hidden" name ="id" value="${persona.getId()}"><br><br>
+						</form>
+					</td> 
+				</tr>
+		</c:forEach> 
+		</tbody>
+	</table>
+						
                     </div>
                 </div>
             </div>
