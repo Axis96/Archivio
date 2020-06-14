@@ -18,7 +18,7 @@ public class GestioneAccesso extends HttpServlet {
 		HttpSession session = req.getSession();
 		
 		salvaPersona(req.getAttribute("nome"),req.getAttribute("cognome"), req.getAttribute("numero"));
-		
+		req.setAttribute("lista", gestione.getListaPersona());
 
 		req.getRequestDispatcher("Homepage.jsp").forward(req, resp);
 	}

@@ -33,4 +33,5 @@ public class Controller {
 		TypedQuery<Persona> query = em.createQuery("select u from archivio u", Persona.class);
 		return query.getResultList();
 	}
+
 }
