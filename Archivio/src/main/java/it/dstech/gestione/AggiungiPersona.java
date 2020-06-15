@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet(urlPatterns = "/Homepage")
-public class GestioneAccesso extends HttpServlet {
+public class AggiungiPersona extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override

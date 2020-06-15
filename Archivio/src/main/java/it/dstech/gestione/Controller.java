@@ -4,11 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Base64;
 import java.util.List;
-
 import javax.persistence.TypedQuery;
-
 import it.dstech.modelli.Persona;
-import it.dstech.modelli.Utente;
+
 
 public class Controller {
 
